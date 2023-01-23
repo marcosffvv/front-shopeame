@@ -1,0 +1,43 @@
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: #CCCCCC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__intro{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        align-items: center;
+        text-align: start;
+        background-color: #FFFFFF;
+    
+        &__title{
+            font-size: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+    
+        }
+        &__questions{
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+    
+            div{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 20px;
+    
+                h4{
+                    padding-bottom: 20px;
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

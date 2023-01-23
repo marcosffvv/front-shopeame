@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="main__blanco">
+        <div class="main__blanco--arriba">
+            <h2>Listado de productos ({{productsList.length}})</h2>
+            <div class="main__blanco--arriba--arriba">
+                <div class="main__blanco--arriba--arriba--abajo">
+                    <button><img src="../../../assets/lista.png" alt="lista"></button>
+                    <button><img src="../../../assets/iconos.png" alt="iconos"></button>
+                </div>
+                <input placeholder="Buscador" type="text">
+            </div>
+        </div>
+        <div *ngFor="let product of productsList" class="main__blanco--abajo">
+                <img src="{{product.image}}" alt="">
+                <h4>{{product.name}}</h4>
+                <p>{{product.description}}</p>
+                <h5>{{product.price}}€</h5>
+                <div>
+                    <p>{{product.stars}}✭</p>
+                    <button routerLink="/gestion/{{product?.id}}">Editar</button>
+                </div>
+        </div>
+    </div>
+</div>

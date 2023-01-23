@@ -1,0 +1,83 @@
+.gris{
+    display: flex;
+    justify-content: center;
+    background-color: #CCCCCC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__blanco{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: white;
+
+        &--edition{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            &--formulario{
+                display: flex;
+                flex-direction: column;
+                
+                h2{
+                    padding-top: 15px;
+
+                }
+                &--div{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 20px;
+
+                    label{
+                        padding-bottom: 5px;
+                    }
+                    input{
+                        width: 500px;
+                        height: 30px;
+                    }
+                    input::placeholder{
+                        padding-left: 10px;
+                    }
+                }
+                &--button{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-content: flex-end;
+                    padding-top: 10px;
+                    padding-bottom: 100px;
+                
+                    button{
+                        width: 110px;
+                        height: 25px;
+                        background: #F89F21;
+                        border: 1px solid #F89F21;
+                        border-radius: 4px;
+                        color: white; 
+                    }
+                }
+            }
+            &--preview{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                padding-top: 15px;
+
+                img{
+                    max-height: 220px;
+                    max-width: 220px;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
+                p{
+                    color: #7c7c7c;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

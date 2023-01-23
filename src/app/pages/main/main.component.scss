@@ -1,0 +1,98 @@
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: #CCCCCC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__blanco{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 60%;
+        justify-content: center;
+        background-color: #FFFFFF;
+        
+        &--arriba{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            h2{
+                padding-top: 40px;
+                padding-left: 40px;
+            }
+            &--arriba{
+                display: flex;
+                flex-direction: column;
+                padding-top: 40px;
+                padding-right: 40px;  
+
+                &--abajo{
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-bottom: 10px;
+
+                    button{
+                        
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            padding: 5px 10px 0px 10px;
+                            background-color: #FFFFFF;
+                        }
+                    }
+                    
+                }
+                input{
+                    width: 200px;
+                    height: 30px;
+                }
+                input::placeholder{
+                    padding-left: 10px;
+                }
+            }
+            
+        }
+        &--abajo{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            padding: 80px 30px 30px 30px;
+            width: 220px;
+            font-size: 16px;
+
+            h4{
+                font-size: 24px;
+            }
+            img{
+                max-width: 220px;
+                height: 220px;
+                padding-bottom: 10px;
+            }
+            h5{
+                font-size: 24px;
+                padding-top: 10px;
+            }
+            div{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                padding-top: 10px;
+
+                button{
+                    width: 65px;
+                    height: 25px;
+                    border-color: #2264D1;
+
+                    p{
+                        color: #2264D1;
+                    }
+                }
+            }
+        }
+    }
+}
+

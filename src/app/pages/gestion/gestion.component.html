@@ -1,0 +1,42 @@
+<div *ngIf="isLoaded" class="gris">
+    <div class="gris__blanco">
+        <div class="gris__blanco--edition">
+            <form [formGroup]="productsForm" (ngSubmit)="onSubmit()" class="gris__blanco--edition--formulario">
+                <h2>Creación/edición de productos</h2>
+                <div  class="gris__blanco--edition--formulario--div">
+                    <label for="product">Nombre del producto:</label>
+                    <input formControlName="name" placeholder="Por ej: Tiesto para planta" type="text">
+                </div>
+                <div [formGroup]="productsForm" (ngSubmit)="onSubmit()" class="gris__blanco--edition--formulario--div">
+                    <label for="product">Precio:</label>
+                    <input formControlName="price"  placeholder="Por ej: 9.50" type="number">
+                </div>
+                <div [formGroup]="productsForm" (ngSubmit)="onSubmit()" class="gris__blanco--edition--formulario--div">
+                    <label for="product">Descripción:</label>
+                    <input formControlName="description" placeholder="Por ej: Lo más vendido este mes" type="text">
+                </div>
+                <div [formGroup]="productsForm" (ngSubmit)="onSubmit()" class="gris__blanco--edition--formulario--div">
+                    <label for="product">Ruta de la imagen:</label>
+                    <input formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg" type="text">
+                </div>
+                <div [formGroup]="productsForm" (ngSubmit)="onSubmit()" class="gris__blanco--edition--formulario--div">
+                    <label for="product">Valoración:</label>
+                    <input formControlName="stars" placeholder="Valora del 1-5" type="number">
+                </div>
+                <div [formGroup]="productsForm" (ngSubmit)="onSubmit()" class="gris__blanco--edition--formulario--button">
+                    <button [disabled]="productsForm.pristine || productsForm.invalid" type="submit">Guardar</button>
+                </div>
+                
+            </form>
+           
+            <div class="gris__blanco--edition--preview">
+                <p>Preview del producto:</p>
+                <img src="{{newProduct.image}}" alt="">
+                <h4>{{newProduct?.name}}</h4>
+                <p>{{newProduct?.description}}</p>
+                <h5>{{newProduct?.price}}</h5>
+                <p>{{newProduct?.stars}}</p>
+            </div>
+        </div>
+    </div>
+</div>
