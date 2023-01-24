@@ -27,5 +27,4 @@ export class LlamadaService {
   putProduct(id: number, product: any){
     return this.http.put(`${this.dbUrl}/${id}`, product);
   }
-
 }
