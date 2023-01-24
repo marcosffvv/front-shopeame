@@ -42,19 +42,19 @@
                             height: 20px;
                             padding: 5px 10px 0px 10px;
                             background-color: #FFFFFF;
-                        }
+                        } 
                     }
-                    
                 }
                 input{
                     width: 200px;
                     height: 30px;
+                    margin-bottom: 5%;
+
                 }
                 input::placeholder{
                     padding-left: 10px;
                 }
             }
-            
         }
         &--abajo{
             display: flex;
@@ -90,6 +90,10 @@
                     p{
                         color: #2264D1;
                     }
+                }
+                button:hover{
+                    background-color: #5194ff;
+                    border-color: #5194ff;
                 }
             }
         }

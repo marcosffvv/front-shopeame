@@ -74,11 +74,13 @@ export class GestionComponent implements OnInit{
       this.llamadaService
       .putProduct(this.idProduct, this.productsForm.value)
       .subscribe(() =>{});
+      alert('producto actualizado correctamente');
+
     } else {
       this.llamadaService
       .postProduct(this.newProduct)
       .subscribe(() =>{});
-      alert('producto creado correctamente')
+      alert('producto creado correctamente');
       
     }
     this.productsForm.reset();
