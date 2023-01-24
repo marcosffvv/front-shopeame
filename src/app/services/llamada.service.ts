@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class LlamadaService {
 
-  dbUrl: string = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
+  dbUrl: string = 'https://restaurants-node-js.vercel.app/restaurants';
   product: any;
   id!: number;
 
