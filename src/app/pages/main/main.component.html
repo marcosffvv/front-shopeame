@@ -10,7 +10,7 @@
                 <input placeholder="Buscador" type="text" #filtro (input)="filtrar(filtro.value)">
             </div>
         </div>
-        <div *ngFor="let product of paintedProducts" class="main__blanco--abajo">
+        <div *ngFor="let product of productsList" class="main__blanco--abajo">
                 <img src="{{product.image}}" alt="">
                 <h4>{{product.name}}</h4>
                 <p>{{product.description}}</p>
